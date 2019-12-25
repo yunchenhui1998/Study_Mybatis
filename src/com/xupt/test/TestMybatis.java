@@ -39,6 +39,17 @@ public class TestMybatis {
 //        listAll(session);
 //        session.commit();
 //        session.close();
+//一对多查询代码
+//        List<Category> cs=session.selectList("listCategory");
+//        for(Category c:cs) {
+//        	System.out.println(c);
+//        	List<Product> ps=c.getProducts();
+//        	for(Product p:ps) {
+//        		System.out.println("\t"+p);
+//        	}
+//        }
+//        session.commit();
+//        session.close();
 	}
 	private static void listAll(SqlSession session) {
 		List<Category> cs=session.selectList("listCategory");
